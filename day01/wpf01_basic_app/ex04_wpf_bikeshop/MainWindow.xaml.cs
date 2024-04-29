@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,11 @@ namespace ex04_wpf_bikeshop
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Source = new Uri("/ContactPage.xaml", UriKind.RelativeOrAbsolute);
+            Debug.WriteLine("Debug!");
         }
     }
 }

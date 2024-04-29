@@ -10,9 +10,12 @@
 
     <Grid>
         <Label Content="받는사람" HorizontalAlignment="Left" Margin="26,48,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="101,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="640" ToolTip="빋는 사람 주소"/>
-        <Label Content="내용" HorizontalAlignment="Left" Margin="26,100,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="101,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="640" 
+        <TextBox HorizontalAlignment="Left" Margin="101,52,0,0" TextWrapping="Wrap" 
+                 Text="" VerticalAlignment="Top" Width="640" ToolTip="빋는 사람 주소"/>
+        <Label Content="내용" HorizontalAlignment="Left"
+               Margin="26,100,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="101,104,0,0" TextWrapping="Wrap" 
+                 Text="" VerticalAlignment="Top" Width="640" 
                  Height="328" ToolTip="내용입력"/>
 
     </Grid>

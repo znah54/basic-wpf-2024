@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex02_wpf_controls", "ex02_w
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex03_wpf_again", "ex03_wpf_again\ex03_wpf_again.csproj", "{6975851D-D63E-43FC-A90F-48168993C190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex04_wpf_bikeshop", "ex04_wpf_bikeshop\ex04_wpf_bikeshop.csproj", "{1153DA56-75D1-4043-BB33-71B95CA2A5B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6975851D-D63E-43FC-A90F-48168993C190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6975851D-D63E-43FC-A90F-48168993C190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6975851D-D63E-43FC-A90F-48168993C190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1153DA56-75D1-4043-BB33-71B95CA2A5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1153DA56-75D1-4043-BB33-71B95CA2A5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1153DA56-75D1-4043-BB33-71B95CA2A5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1153DA56-75D1-4043-BB33-71B95CA2A5B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
