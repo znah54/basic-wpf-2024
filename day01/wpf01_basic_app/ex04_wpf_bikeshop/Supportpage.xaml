@@ -27,10 +27,20 @@
         </ListBox>
 
         <ListBox x:Name ="LsbBikes" Grid.Row="1" Grid.Column="1" Margin="10" Background="AliceBlue"
-                 ItemsSource="{Binding}">
+                 ItemsSource="{Binding}" SelectionChanged="LsbBikes_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Path=Speed}"/>
+                    <StackPanel>
+                        <TextBlock Text="Speed}"/>
+                        <TextBlock Text="{Binding Path=Speed}"/>
+                        <Slider Value="{Binding Path=Speed}" Maximum="100"/>
+                        <TextBlock Text="Color"/>
+                        <Border Height="20">
+                            <Border.Background>
+                                <SolidColorBrush Color="{Binding Path=Color}"/>
+                            </Border.Background>
+                        </Border>
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>

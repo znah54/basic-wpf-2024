@@ -38,5 +38,11 @@ namespace ex04_wpf_bikeshop
             // ListBox에 데이터 할당
             LsbBikes.DataContext = bikeList;
         }
+
+        private void LsbBikes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selItem = (LsbBikes.SelectedItem as Bike);
+            MessageBox.Show(selItem.Speed.ToString()+"/"+selItem.Color.ToString());
+        }
     }
 }
