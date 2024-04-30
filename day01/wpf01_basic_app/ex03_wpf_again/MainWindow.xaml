@@ -49,7 +49,10 @@
                 <Ellipse Fill="Blue" Stroke="Red" StrokeThickness="2" Height="30" Width="30"/>
                 <Rectangle Fill="Green" Height="40"/>
                 <Path Stroke="Yellow" Fill="Red"
-                      StrokeThickness="2"/>
+      StrokeThickness="2" 
+      Data="M 50,50 l 15,0 l 5,-15 l 
+            5,15 l 15,0 l -10,10 l 4,15 l 
+            -15,-9 l -15,9 l 7,-15 Z" />
             </StackPanel>
         </GroupBox>
         <GroupBox Grid.Row="1" Grid.Column="1" Margin="10" Header="복합컨트롤">

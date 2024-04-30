@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ex04_wpf_bikeshop;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +26,17 @@ namespace ex04_wpf_bikeshop
         {
             InitializeComponent();
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            Bike myBike = new Bike();
+            myBike.Speed = 60;
+            myBike.Color = Colors.Black;
+
+            TextBox text1 = new TextBox();
+            StpBike.DataContext = myBike;
+            //MessageBox.Show(DgBike.Speed.ToString());
+            
+        }  
     }
 }
