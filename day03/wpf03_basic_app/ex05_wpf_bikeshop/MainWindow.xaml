@@ -17,7 +17,8 @@
                             <Rectangle Fill="#25A2FA"
                                        Stroke="DarkGray"
                                        RadiusX="10" RadiusY="10"/>
-                            <Label Content="Click" Foreground="Wheat" FontWeight="Bold"/>
+                            <Label Content="Click" Foreground="Wheat" FontWeight="Bold"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>

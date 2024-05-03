@@ -8,7 +8,7 @@
         public string DeptName {  get; set; }
         public string Addr {  get; set; }
 
-        public static readonly string SELECT_QUERY = @"SELECT [ID]
+        public static readonly string SELECT_QUERY = @"SELECT [Id]
                                                               ,[EmpName]
                                                               ,[Salary]
                                                               ,[DeptName]
