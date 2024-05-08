@@ -109,3 +109,49 @@ IoT 개발자 WPF 학습리포지토리
 
 
 ![실행화면](https://github.com/znah54/basic-wpf-2024/blob/main/images/wpf002.png)
+
+
+## 5일차
+- MahApps.Metro (https://mahapps.com/)
+    - Metro(Modern UI) 디자인 접목
+
+    ![실행화면](https://github.com/znah54/basic-wpf-2024/blob/main/images/wpf003.png)
+    
+    ![저장화면](https://github.com/znah54/basic-wpf-2024/blob/main/images/wpf004.png)
+
+- Movie API 연동 앱, MovieFinder 2024
+    - 좋아하는 영화 즐겨찾기 앱
+    - DB(SQLServer) 연동
+    - MahApps.Metro UI
+    - CefSharp WebBrowser 패키지
+    - Google.Apis 패키지
+    - MVVM 사용안함
+    - OpenAPI 두가지 사용
+
+    - [TMDB](https://www.themoviedb.org/) OpenAPI 활용
+        - 회원가입 후 API 신청
+    - [Youtube API](https://console.cloud.google.com/) 활용 
+        - 새 프로젝트 생성
+        - API 및 서비스, 라이브러리 선택
+        - Youtube Data API v3 선택, 사용버튼 클릭
+        - 사용자 인증정보 만들기 클릭
+            1. 사용자 데이터 라디오버튼 클릭, 다음
+            2. OAutho 동의화면, 기본내용 입력 후 다음
+            3. 범위는 저장 후 계속
+            4. OAuth Client ID, 앱유형을 데스크톱앱, 이름 입력 후 만들기 클릭
+
+## 6일차
+- MovieFinder 2024 남은 것
+    - 즐겨찾기 후 다시 선택 즐겨찾기 막아야함
+    - 즐겨찾기 삭제 구현
+    - 그리드뷰 영화를 더블클릭하면 영화소개 팝업
+
+
+## 7일차
+- MovieFinder 2024 완료
+
+- 데이터포털 API 연동앱 예제   
+    - 5월 13일 개인프로젝트 참조소스
+
+## 8일차
+- WPF 개인프로젝트 포트폴리오 대신
