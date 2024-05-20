@@ -10,7 +10,6 @@ using Newtonsoft.Json.Linq;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
-
 namespace WPF_TRIP
 {
     /// <summary>
@@ -47,7 +46,7 @@ namespace WPF_TRIP
         }
         private async void BtnReqRealtime_Click(object sender, RoutedEventArgs e)
         {
-            String OpenApiUrl = "file:///C:/Users/user/Desktop/GimhaeTourism.html";
+            String OpenApiUrl = "https://www.gimhae.go.kr/openapi/tour/tourinfo.do";
             string result = string.Empty;
 
             WebRequest req = null;
@@ -115,7 +114,7 @@ namespace WPF_TRIP
             mapWindow.ShowDialog();
         }
 
-        private void BtnSaveData_Click(object sender, RoutedEventArgs e)
+        private async Task BtnSaveData_ClickAsync(object sender, RoutedEventArgs e)
         {
             if (GrdResult.Items.Count == 0)
             {
@@ -150,6 +149,58 @@ namespace WPF_TRIP
                         cmd.Parameters.AddWithValue("@address", item.parking);
                         cmd.Parameters.AddWithValue("@address", item.images);
 
+
+                        insRes += cmd.ExecuteNonQuery();
+                    }
+                    if (insRes > 0)
+                    {
+                        await this.ShowMessageAsync("저장", "DB저장성공!");
+                        StsResult.Content = $"DB저장 {insRes}건 성공!";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await this.ShowMessageAsync("저장오류", $"저장오류 {ex.Message}");
+            }
+            InitComboDateFromDB();
+        }
+
+        private async void BtnSaveData_Click(object sender, RoutedEventArgs e)
+        {
+            if (GrdResult.Items.Count == 0)
+            {
+                await this.ShowMessageAsync("저장오류", "실시간 조회후 저장하십시오");
+                return;
+
+            }
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Helpers.Common.CONNSTRING))
+                {
+                    conn.Open();
+
+                    var insRes = 0;
+                    foreach (tourinfo item in GrdResult.Items)
+                    {
+                        SqlCommand cmd = new SqlCommand(Models.tourinfo.INSERT_QUERY, conn);
+                        cmd.Parameters.AddWithValue("@idx", item.idx);
+                        cmd.Parameters.AddWithValue("@name", item.name);
+                        cmd.Parameters.AddWithValue("@category", item.category);
+                        cmd.Parameters.AddWithValue("@area", item.area);
+                        cmd.Parameters.AddWithValue("@copy", item.copy);
+                        cmd.Parameters.AddWithValue("@manage", item.manage);
+                        cmd.Parameters.AddWithValue("@phone", item.phone);
+                        cmd.Parameters.AddWithValue("@homepage", item.homepage);
+                        cmd.Parameters.AddWithValue("@content", item.content);
+                        cmd.Parameters.AddWithValue("@fee", item.fee);
+                        cmd.Parameters.AddWithValue("@usehour", item.usehour);
+                        cmd.Parameters.AddWithValue("@address", item.address);
+                        cmd.Parameters.AddWithValue("@address", item.xposition);
+                        cmd.Parameters.AddWithValue("@address", item.yposition);
+                        cmd.Parameters.AddWithValue("@address", item.parking);
+                        cmd.Parameters.AddWithValue("@address", item.images);
 
                         insRes += cmd.ExecuteNonQuery();
                     }

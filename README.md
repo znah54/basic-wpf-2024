@@ -162,4 +162,27 @@ https://github.com/znah54/basic-wpf-2024/assets/50408406/13459ac9-3945-46e7-aced
     - 5월 13일 개인프로젝트 참조소스
 
 ## 8일차
-- WPF 개인프로젝트 포트폴리오 대신
+- 개인프로젝트(김해시 관광명소 앱)
+
+![초기화면](https://github.com/znah54/basic-wpf-2024/blob/main/images/tour.png)
+- 김해시 관광지 API 연동
+    - 김해시에서 추천한 관광지
+    - DB(SQLServer) 연동
+    - MahApps.Metro UI
+    - CefSharp WebBrowser 패키지
+    - Google.Apis 패키지
+    - MVVM 사용안함
+    - OpenAPI 두가지 사용
+
+
+![조회화면](https://github.com/znah54/basic-wpf-2024/blob/main/images/tour2.png)
+
+- 조회화면
+    - 김해 관광명소
+    - 조회 => 기본적인 관광명소 이름, 지역, 가는방법, 홈페이지등
+
+![구글맵](https://github.com/znah54/basic-wpf-2024/blob/main/images/tour3.png)
+
+- 구글맵연동
+    - 좌표값에 따른 구글맵 표시 이미지화
+    
