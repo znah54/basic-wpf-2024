@@ -160,6 +160,18 @@ https://github.com/znah54/basic-wpf-2024/assets/50408406/13459ac9-3945-46e7-aced
 
 - 데이터포털 API 연동앱 예제   
     - 5월 13일 개인프로젝트 참조소스
+ 
+    - 
+
+- 데이터포털 API 연동앱 예제
+    - CefSharp 사용시 플랫폼 대상 AnyCPU에서 x64로 변경필수!
+    - MahApps.Metro UI, IconPacks
+    - Newtonsoft.Json
+    - 개인프로젝트 참조소스
+
+      https://github.com/hugoMGSung/basic-wpf-2024/assets/59336331/f1dddc3c-d777-48b0-a212-ec0bcb6dbbd6
+
+      
 
 ## 8일차
 - 개인프로젝트(김해시 관광명소 앱)
